@@ -1,0 +1,17 @@
+### Hypothesis
+The underlying hypothesis for creating an ideal defensive metric in basketball posits that a comprehensive, multifaceted metric can more accurately encapsulate a player's defensive contributions than traditional statistics alone. By integrating a broad array of metrics—including traditional stats, advanced metrics, hustle stats, and team impact measures—the goal is to develop a model that more accurately reflects a player's true defensive value.
+
+# What's Been Done
+- Data Collection & Preparation: Conceptualization of a comprehensive dataset incorporating a wide range of defensive metrics, including traditional metrics (blocks, steals), defensive rebounds, advanced metrics (Defensive Win Shares, Defensive Box Plus/Minus, Defensive Rating), hustle stats (deflections, loose balls recovered), contest rate, opponent FG% at the rim, Defensive Versatility Index, fouls and defensive fouls drawn, and on/off court impact.
+- Initial Model Development: Proposal of a simplified model utilizing linear regression to predict All-Defensive Team votes, using this as a proxy for defensive prowess. This model choice prioritizes interpretability and assumes a direct relationship between input features and defensive recognition.
+- Feature Engineering: Suggestion of basic feature engineering techniques, including normalization and the potential combination of related stats into composite metrics to streamline dimensionality and emphasize key defensive aspects.
+# What's There to Do
+- Enhanced Data Collection: Actual, detailed data collection is required to supplant the dummy dataset, involving comprehensive stats for a substantial number of players across multiple seasons for robust model training and validation.
+Advanced Feature Engineering: Application of more complex feature engineering methods is needed. This might involve creating interaction terms, exploring non-linear transformations, and possibly devising proprietary composite indices (e.g., a hustle score).
+- Model Refinement and Selection: Exploration of more sophisticated models (like ensemble methods or neural networks) could better capture complex relationships and interactions. This step should include rigorous cross-validation and hyperparameter optimization.
+Validation and Testing: Comprehensive validation against both quantitative measures (such as prediction accuracy, R-squared) and qualitative assessments (expert opinions, comparison with actual All-Defensive Team selections) is essential.
+# Problems with This Model
+- Complexity vs. Interpretability: Increasing model complexity and incorporating numerous features may reduce interpretability, obscuring insights into which defensive aspects are most impactful and how different metrics influence the overall defensive rating.
+- Data Availability and Quality: Gathering extensive, high-quality data for all proposed metrics could pose significant challenges, especially since some stats like hustle stats or contest rate are not consistently recorded across all play levels or might have variable definitions.
+- Subjectivity and Bias: Utilizing All-Defensive Team votes as the outcome introduces subjectivity and potential biases, as these votes can be influenced by factors beyond pure defensive performance, such as player reputation, media coverage, and team success.
+Overfitting and Generalizability: There is a risk of overfitting, particularly with complex models or a high feature-to-observation ratio. Ensuring the model generalizes well to unseen data is crucial for its practical application.
